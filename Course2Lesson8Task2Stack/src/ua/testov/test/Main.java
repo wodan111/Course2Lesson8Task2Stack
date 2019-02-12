@@ -8,9 +8,8 @@ public class Main {
 		System.out.println(st.addElement(2));
 		System.out.println(st.addElement(3));
 		System.out.println(st.addElement(4));
-		System.out.println(st.addElement(5));
-		int x = st.delElement();
-		System.out.println(x);
+		System.out.println(st.addElement(5));	
+		System.out.println(st.delElement());
 		System.out.println(st.addElement("sdf"));
 		System.out.println(st.addElement(5));
 		System.out.println(st);

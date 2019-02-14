@@ -15,7 +15,7 @@ public class Stack implements Cloneable {
 			i = i + 1;
 			obj[i] = o;
 		} else {
-			System.out.println("stackoverflow");
+			System.out.println("stackoverflow or forbidden type");
 			return -1;
 		}
 		return i;

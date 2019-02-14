@@ -10,8 +10,8 @@ public class Stack implements Cloneable {
 		super();
 	}
 
-	public int addElement(Object o) {
-		if (i < 4) {
+	public int addElement(Object o,BlackList bl) {
+		if (bl.check(o)==false && i < 4) {
 			i = i + 1;
 			obj[i] = o;
 		} else {
@@ -39,6 +39,9 @@ public class Stack implements Cloneable {
 	}
 
 	public Object getLastElement() {
+		if(i==-1) {
+			return -1;
+		}
 		return obj[i];
 	}
 
